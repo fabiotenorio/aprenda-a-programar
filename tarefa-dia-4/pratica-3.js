@@ -103,21 +103,21 @@ let receita = [
 
 //Problema 1: Qual o valor total de vendas sem gorjeta?
 //COLOQUE SUA SOLUÇÃO AQUI
-let total = 0
-let totalGorjeta = 0
-let ValorAbaixo50 = 0
-for (let valor of receita) {
-   total += valor.valor
+let total = 0;
+let totalGorjeta = 0;
+let ValorAbaixo50 = 0;
+for (let item of receita) {
+   total = total + item.valor
   
 //Problema 2: Qual o valor total de vendas incluindo a gorjeta?
 //COLOQUE SUA SOLUÇÃO AQUI
 
-    totalGorjeta += valor.valor+valor.gorjeta
+    totalGorjeta = totalGorjeta + item.valor + item.gorjeta
 
 //Problema 3: Quantas vendas foram abaixo de 50 reais?
 //COLOQUE SUA SOLUÇÃO AQUI
-    if (valor.valor < 50) {
-    ValorAbaixo50 = valor.valor
+    if (item.valor < 50) {
+    ValorAbaixo50++
     }
 
 }
