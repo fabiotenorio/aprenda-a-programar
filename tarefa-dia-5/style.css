@@ -1,0 +1,11 @@
+h1 {
+    color: red
+}
+
+#primeiroTitulo {
+    color: blue
+}
+
+.titulos {
+    font-family: Arial, Helvetica, sans-serif;
+}
